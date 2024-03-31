@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <div class="weather-info">
+                <div class="city-name">
+                    <h1 class="city"></h1>
+                    <p class="temp"></p>
+                </div>
+                <div class="weather-icon">
+                    <img src="weather-app-img/images/rain.png" alt="Weather Icon" class="weather-img">
+                </div>
+                <div class="details">
+                    <div class="col">
+                        <img src="weather-app-img/images/humidity.png" alt="Humidity Icon" class="humidity-icon">
+                        <div class="text">
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="weather-app-img/images/wind.png" alt="Wind Icon" class="wind-icon">
+                        <div class="text">
+                            <p class="wind">50 km/h</p>
+                            <p>Wind</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Enter city name" spellcheck="false" class="search-input">
+                <button class="search-btn">
+                    <img src="weather-app-img/images/search.png" alt="Search">
+                </button>
+            </div>
+            <div class="error">
+                <p class="error-text"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p style="color: white;">&copy; 2024 Ayesha's Weather App</p>
+</footer>
+</html>

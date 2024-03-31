@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1E1E1E;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-app {
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.city-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.temp {
+    margin-top: 10px;
+    font-size: 60px;
+    font-weight: 500;
+    color: #1E1E1E;
+}
+
+.weather-icon {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    margin-top: -6px;
+    font-size: 20px;
+}
+
+.search-box {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.search-input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #1E1E1E;
+}
+
+.search-btn {
+    width: 15%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #1E1E1E;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.search-btn img {
+    width: 16px;
+}
+
+.error {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #ff0000;
+}
+
+.error-text {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .temp {
+        font-size: 40px;
+    }
+
+    .humidity,
+    .wind {
+        font-size: 16px;
+    }
+
+    .weather-icon {
+        width: 150px;
+        height: 150px;
+    }
+
+    .search-input {
+        width: 85%;
+    }
+}
